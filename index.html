@@ -19,7 +19,7 @@
     />
   </head>
   <body>
-      <header class="header-root-container">
+    <header class="header-root-container">
       <div class="header-main-cont container">
         <nav class="header-nav-container">
           <!--Header Logo -->
@@ -493,7 +493,7 @@
         </ul>
       </div>
     </main>
-     <footer class="footer-container">
+    <footer class="footer-container">
       <div class="footer-logo-content-wrapper container">
         <div class="footer-logo-container">
           <a class="footer-logo-first-part" href="./index.html"
@@ -540,18 +540,26 @@
             </li>
           </ul>
         </div>
+        <!-- Subscribe -->
         <div class="footer-subs">
-            <p class="footer-text-subs">Subscribe</p>
-            <form class="form-cont" action="/index.html">
-                <label class="footer-subs-label" for="foo-subs-email">
-                    <input
-                    id="foo-subs-email"
-                    class="footer-subs-inp"
-                    name="foo-subs-email"
-                    type="email"
-                    placeholder="Email"
-                    /></label>
-              
+          <p class="footer-text-subs">Subscribe</p>
+          <form class="form-cont" action="/index.html">
+            <label class="footer-subs-label" for="foo-subs-email">
+              <input
+                id="foo-subs-email"
+                class="footer-subs-inp"
+                name="foo-subs-email"
+                type="email"
+                placeholder="Email"
+            /></label>
+            <button class="footer-subs-btn" type="submit">
+              Subscribe
+              <svg class="footer-subs-btn-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-frame"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
   </body>

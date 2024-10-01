@@ -31,8 +31,8 @@ h1,
 h2,
 h3,
 p {
-  margin: 0;
-  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
   list-style: none;
 }
 
@@ -44,6 +44,7 @@ img {
 a {
   text-decoration: none;
   font-style: normal;
+  outline: none;
 }
 
 .header-root-container {
@@ -57,13 +58,13 @@ a {
   justify-content: space-between;
   column-gap: 40px;
   background-color: #fff;
+  align-items: center;
 }
 
 /* Nav container */
 .header-nav-container {
   display: flex;
   align-items: center;
-  /* column-gap: 76px; */
 }
 
 /* Headerr logo design */
@@ -72,7 +73,7 @@ a {
   font-family: Raleway;
   font-size: 18px;
   font-weight: 700;
-  line-height: 1.17; /* 116.667% */
+  line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
   display: block;
@@ -85,7 +86,7 @@ a {
   font-family: Raleway;
   font-size: 18px;
   font-weight: 700;
-  line-height: 1.17; /* 116.667% */
+  line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
 }
@@ -249,19 +250,6 @@ address {
   padding: 120px 0;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .section-two-cardset {
   display: flex;
   justify-content: space-between;
@@ -315,7 +303,6 @@ address {
 .section-our-team .member img {
   transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .team-heading {
   font-size: 36px;
@@ -632,4 +619,22 @@ team .social-link {
 .portfolio-card:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.order-modal-container.is-open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.order.modal-container {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

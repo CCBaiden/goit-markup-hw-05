@@ -692,3 +692,16 @@ team .social-link {
 .order-modal-close-btn:focus .order-modal-close-x-icon {
   fill: #ffffff;
 }
+
+.order-modal-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 408px;
+  border-radius: 4px;
+  background-color: #fcfcfc;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.16;
+  letter-spacing: 0.48px;
+}

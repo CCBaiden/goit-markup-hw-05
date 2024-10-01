@@ -729,3 +729,8 @@ order-modal-inputs-wrapper {
   display: block;
   margin-bottom: 4px;
 }
+
+
+.order-modal-input-icon-box {
+    position: relative;
+}

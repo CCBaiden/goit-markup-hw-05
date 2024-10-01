@@ -730,7 +730,17 @@ order-modal-inputs-wrapper {
   margin-bottom: 4px;
 }
 
-
 .order-modal-input-icon-box {
-    position: relative;
+  position: relative;
 }
+
+.order-modal-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  fill: var(--color-navy-blue);
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+

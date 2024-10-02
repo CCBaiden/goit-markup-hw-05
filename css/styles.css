@@ -635,6 +635,12 @@ team .social-link {
   margin-bottom: 16px;
 }
 
+.form-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+
 
 .order-modal-container.is-open {
   visibility: visible;

@@ -829,3 +829,10 @@ order-modal-inputs-wrapper {
   background-color: var(--color-medium-blue);
   fill: var(--color-cloud);
 }
+
+.order-modal-checkbox-label {
+  color: var(--color-light-sale);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+}

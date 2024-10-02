@@ -7,6 +7,18 @@ body {
   box-sizing: border-box;
 }
 
+:root {
+  /* colors */
+  --color-white: #fff;
+  --color-cloud: #f4f4fd;
+  --color-cornflower: #e7e9fc;
+  --color-light-sale: #8e8f99;
+  --color-slate: #434455;
+  --color-iris: #4d5ae5;
+  --color-medium-blue: #404bbf;
+  --color-navy-blue: #2e2f42;
+}
+
 .container {
   max-width: 1158px;
   padding: 0 15px;
@@ -645,7 +657,7 @@ team .social-link {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 408px;
-  height: 584px;
+  min-height: 584px;
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14) 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);

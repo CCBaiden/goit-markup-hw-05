@@ -934,7 +934,6 @@ team .social-link {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
-
 .order-modal-button-submit:hover,
 .order-modal-button-submit:focus {
   background-color: #404bbf;

@@ -2,9 +2,6 @@ body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 :root {
@@ -29,8 +26,6 @@ ul {
   padding-inline-start: 0;
   margin-block-start: 0;
   margin-block-end: 0;
-  /* margin: 0;
-  padding: 0; */
   list-style-type: none;
 }
 
@@ -45,12 +40,12 @@ h3,
 p {
   margin-block-start: 0;
   margin-block-end: 0;
-  list-style: none;
 }
 
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -125,15 +120,13 @@ a {
 
 .header-nav-list-item > .header-nav-list-item-link::after {
   content: "";
-  display: block;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   width: 100%;
   height: 4px;
   border-radius: 2px;
   background-color: #404bbf;
-  transform: scaleX(0);
   transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -153,12 +146,6 @@ a {
 
 .header-nav-list-item-link:focus {
   color: #404bbf;
-}
-
-.header-nav-list-item-link:hover::after,
-.header-nav-list-item-link:focus::after,
-.header-nav-list-item-link.active::after {
-  transform: scaleX(1);
 }
 
 /* Header padding to calculate container haight  */
@@ -203,6 +190,7 @@ address {
   background-color: #2e2f42;
   padding: 188px 0;
   background-image: linear-gradient(
+      to bottom,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
@@ -633,12 +621,27 @@ team .social-link {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer-subs {
+  margin-left: 80px;
+}
+
+.footer-subs-text {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
+
 .order-modal-container.is-open {
   visibility: visible;
   opacity: 1;
 }
 
-.order.modal-container {
+.order-modal-container {
   visibility: hidden;
   opacity: 0;
   position: fixed;
@@ -659,7 +662,7 @@ team .social-link {
   width: 408px;
   min-height: 584px;
   background: #fcfcfc;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14) 0px 1px 3px rgba(0, 0, 0, 0.12),
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -684,11 +687,7 @@ team .social-link {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.order-modal-close-btn:hover {
-  background-color: #404bbf;
-  border: none;
-}
-
+.order-modal-close-btn:hover,
 .order-modal-close-btn:focus {
   background-color: #404bbf;
   border: none;
@@ -705,19 +704,6 @@ team .social-link {
   fill: #ffffff;
 }
 
-.order-modal-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 408px;
-  border-radius: 4px;
-  background-color: #fcfcfc;
-  font-family: Roboto;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.16;
-  letter-spacing: 0.48px;
-}
-
 .order-modal-text {
   color: #2e2f42;
   text-align: center;
@@ -725,11 +711,11 @@ team .social-link {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  margin-bottom: 16px;
   letter-spacing: 0.02em;
+  margin-bottom: 16px;
 }
 
-order-modal-inputs-wrapper {
+.order-modal-inputs-wrapper {
   margin-bottom: 8px;
 }
 
@@ -747,10 +733,10 @@ order-modal-inputs-wrapper {
 }
 
 .order-modal-icon {
+  fill: var(--color-navy-blue);
   position: absolute;
   left: 16px;
   top: 50%;
-  fill: var(--color-navy-blue);
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -761,10 +747,10 @@ order-modal-inputs-wrapper {
 
 .order-modal-form-input {
   outline: transparent;
+  padding-left: 38px;
   width: 100%;
   height: 40px;
   background-color: transparent;
-  padding-left: 38px;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -772,6 +758,10 @@ order-modal-inputs-wrapper {
 
 .order-modal-form-input:focus {
   border-color: #4d5ae5;
+}
+
+.order-modal-form-input:focus + .order-modal-icon {
+  fill: #4d5ae5;
 }
 
 .order-modal-form-textarea-wrapper {

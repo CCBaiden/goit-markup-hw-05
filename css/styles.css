@@ -892,6 +892,11 @@ team .social-link {
   .order-modal-checkbox-icon-wrapper {
   border: none;
   background-color: var(--color-medium-blue);
+}
+
+.order-modal-checkbox-input:checked
+  + .order-modal-checkbox-label
+  .order-modal-icon-check-svg {
   fill: var(--color-cloud);
 }
 

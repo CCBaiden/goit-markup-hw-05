@@ -395,8 +395,8 @@ team .social-link {
 
 .member-info {
   padding: 32px 0;
-  width: 264;
-  height: 426;
+  width: 264px;
+  height: 426px;
   transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -720,7 +720,7 @@ team .social-link {
 .modal-wrapper {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 40%;
   transform: translate(-50%, -50%) scale(1);
   width: 408px;
   min-height: 584px;
